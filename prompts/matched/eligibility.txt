@@ -1,0 +1,10 @@
+Review the anonymous context pairs against the supplied research task. Check whether they form usable comparisons, not whether they are clever or likely to produce a large effect. You have no simulation results. Do not rank the ideas, improve their content, or consult other material.
+
+Apply the same admission rules to every pair:
+1. The two worlds differ on one identifiable contextual condition and are internally coherent.
+2. They preserve the stated X contrast, Y, unit, time horizon and fixed background.
+3. Their facts do not state the target relationship, prescribe the focal actor's response, or assign an answer-bearing preference.
+4. They do not make one X level impossible or determine the outcome through a shutdown or a rule keyed directly to X. Ordinary constraints are allowed; a potentially large effect is not a reason to reject a pair.
+5. They use the common factual format and length limits. No unrelated conditions change together.
+
+Return English JSON with exactly {"items":[...]}. Each item has exactly id, admit (boolean), failure_codes (array chosen from bundled_change, construct_drift, answer_cue, forced_outcome, incoherent, format; empty when admitted), and reason (one concise sentence). Use every supplied pair ID once. Give brief factual judgments, not private reasoning.

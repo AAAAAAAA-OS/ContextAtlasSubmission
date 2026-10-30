@@ -1,0 +1,14 @@
+{
+  "name": "contextatlas", "version": "2.0.0", "private": true,
+  "description": "Matched contextual search and relationship assessment for theory development",
+  "type": "module", "engines": {"node": ">=22.13.0"},
+  "scripts": {
+    "run": "node src/cli.mjs run", "resume": "node src/cli.mjs resume",
+    "extract": "node src/cli.mjs extract", "demo": "node src/cli.mjs demo",
+    "compare": "node src/cli.mjs compare",
+    "export-prompts": "node scripts/export-prompts.mjs", "build": "node scripts/check-release.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

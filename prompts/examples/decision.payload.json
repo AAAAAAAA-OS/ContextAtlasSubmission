@@ -1,0 +1,13 @@
+{
+  "background": "Two liner-shipping firms consider forming a vessel-sharing alliance. Both must participate voluntarily. They share at least one market. Market complementarity concerns nonoverlapping market coverage and is distinct from compatibility of operating resources.\n\nUnit: Potential alliance combination. Time horizon: Formation of the proposed vessel-sharing alliance.\n\nForecast the signed direction and strength of the relationship between Market complementarity between potential liner-shipping alliance partners and Observed vessel-sharing alliance formation.\n\nRate how higher market complementarity changes the likelihood that the firms establish a vessel-sharing alliance. Compare lower X (More overlapping market portfolios) with higher X (More nonoverlapping markets, retaining at least one common market). Use the same X contrast in both contexts. A positive rating means higher X is associated with more Y; a negative rating means less Y. Rate the relationship, not the overall level of Y. Do not interpret this judgment as a measured empirical coefficient.\n\nCompare lower X (More overlapping market portfolios) with higher X (More nonoverlapping markets, retaining at least one common market). The X contrast and Y definition stay the same in both settings. Rate the relationship, not the overall level of Y.\n\nThe outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.\n\nThe lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts.",
+  "contexts": [
+    {
+      "context_id": "W40e25e472647a6ba6f66",
+      "narrative": "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.\nThe lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts.\ninformation access: Fixture level A of information_access."
+    },
+    {
+      "context_id": "Wd13c53a271c5dd1a91fd",
+      "narrative": "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.\nThe lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts.\ninformation access: Fixture level B of information_access."
+    }
+  ]
+}

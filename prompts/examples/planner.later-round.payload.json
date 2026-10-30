@@ -1,0 +1,607 @@
+{
+  "study": {
+    "x": "Market complementarity between potential liner-shipping alliance partners",
+    "y": "Observed vessel-sharing alliance formation",
+    "unit": "Potential alliance combination",
+    "time_horizon": "Formation of the proposed vessel-sharing alliance",
+    "x_contrast": {
+      "lower": "More overlapping market portfolios",
+      "higher": "More nonoverlapping markets, retaining at least one common market"
+    },
+    "setting": "Two liner-shipping firms consider forming a vessel-sharing alliance. Both must participate voluntarily. They share at least one market. Market complementarity concerns nonoverlapping market coverage and is distinct from compatibility of operating resources.",
+    "task": "Rate how higher market complementarity changes the likelihood that the firms establish a vessel-sharing alliance. Compare lower X (More overlapping market portfolios) with higher X (More nonoverlapping markets, retaining at least one common market). Use the same X contrast in both contexts. A positive rating means higher X is associated with more Y; a negative rating means less Y. Rate the relationship, not the overall level of Y. Do not interpret this judgment as a measured empirical coefficient.",
+    "shared_facts": [
+      "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+      "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+    ],
+    "source_evidence": {
+      "citation": "Mitsuhashi, H., and Greve, H. R. (2009). A Matching Theory of Alliance Formation and Organizational Success: Complementarity and Compatibility. Academy of Management Journal, 52(5), 975-995.",
+      "measurementNotes": "Global liner shipping; market definitions and resource compatibility held constant",
+      "sourceLocations": [
+        "PDF4/978 H1",
+        "PDF9/983 formation sample",
+        "PDF11/985 measure",
+        "PDF13/987 results"
+      ],
+      "translationNotes": "Index is symmetric difference divided by union, but zero when no common market. Economic values are unweighted. Matching requires mutual participation."
+    },
+    "attribute_definitions": {
+      "information_access": "Which substantive information is available, when it is available, or who can observe it; distinguish from accuracy.",
+      "information_dependence": "Shared sources, overlapping signals or correlated errors, holding marginal accuracy distinct.",
+      "interpretation_compatibility": "Common vocabulary, data formats, interpretive constraints or ability to reconcile the same evidence.",
+      "verification_process": "Cost, effort or procedure of checking evidence or actions; preserve any fixed verification level.",
+      "feedback_timing": "When consequences or diagnostic feedback become observable, rather than how often X changes.",
+      "coordination_constraints": "Compatibility, synchronized choices, matching requirements or reciprocal adjustment dependence.",
+      "adjustment_scope": "The number or allocation of tasks/parties that must revise operations, distinct from compatibility itself.",
+      "work_distribution": "How a fixed total burden is distributed across parties.",
+      "choice_defaults": "Initialization, defaults or established conventions with choice rights held explicit.",
+      "implementation_latency": "Time between an available decision and its implementation or certification.",
+      "decision_windows": "Deadlines, decision frequency, meeting calendars or available time for adjustment.",
+      "reversibility": "Recoverability or restoration expense after a commitment, distinct from detecting its consequences.",
+      "transition_continuity": "Whether incumbent operations can continue during replacement, qualification or transition.",
+      "exit_cost": "Losses or costs associated with leaving an arrangement, distinct from temporary interruption.",
+      "resource_slack": "Spare capacity, buffers, staffing or resource availability.",
+      "incentive_alignment": "Compatibility of interests, compensation opportunities or distributive preferences.",
+      "authority_allocation": "Who can decide, veto or authorize an action; preserve fixed governance definitions.",
+      "knowledge_continuity": "Retention or transfer of role-specific experience through handovers, records or briefing.",
+      "routine_reuse": "Recurrence that permits procedures or administrative routines to be reused.",
+      "communication_access": "Communication channels, meeting access or communication costs.",
+      "enforcement_reach": "Who can apply consequences once a violation is established, distinct from detecting it.",
+      "enforcement_latency": "Delay in obtaining a remedy after evidence exists.",
+      "external_approval": "Outside authorization requirements or approval procedures.",
+      "experimentation_cost": "Cost, scale or opportunity to trial an option before commitment.",
+      "disruption_stakes": "Consequences of interruption or mismatch, distinct from its likelihood."
+    },
+    "attribute_concepts": {
+      "information_access": "uncertainty",
+      "information_dependence": "uncertainty",
+      "verification_process": "uncertainty",
+      "feedback_timing": "uncertainty",
+      "coordination_constraints": "interdependence",
+      "adjustment_scope": "interdependence",
+      "communication_access": "interdependence",
+      "decision_windows": "interdependence",
+      "work_distribution": "heterogeneity",
+      "incentive_alignment": "heterogeneity",
+      "interpretation_compatibility": "heterogeneity",
+      "implementation_latency": "adaptation_costs",
+      "reversibility": "adaptation_costs",
+      "transition_continuity": "adaptation_costs",
+      "exit_cost": "adaptation_costs",
+      "experimentation_cost": "adaptation_costs",
+      "disruption_stakes": "adaptation_costs",
+      "authority_allocation": "institutional_constraints",
+      "enforcement_reach": "institutional_constraints",
+      "enforcement_latency": "institutional_constraints",
+      "external_approval": "institutional_constraints",
+      "choice_defaults": "institutional_constraints",
+      "knowledge_continuity": "knowledge_and_learning",
+      "routine_reuse": "knowledge_and_learning",
+      "resource_slack": "resource_conditions"
+    }
+  },
+  "candidate_ids": [
+    "r5_c1",
+    "r5_c2",
+    "r5_c3",
+    "r5_c4"
+  ],
+  "prior_candidates": [
+    {
+      "attribute_code": "information_access",
+      "context": {
+        "id": "r1_c1",
+        "title": "Illustrative information access contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "information access",
+          "reference": "Fixture level A of information_access; cycle 1.",
+          "candidate": "Fixture level B of information_access; cycle 1."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "information_dependence",
+      "context": {
+        "id": "r1_c2",
+        "title": "Illustrative information dependence contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "information dependence",
+          "reference": "Fixture level A of information_dependence; cycle 1.",
+          "candidate": "Fixture level B of information_dependence; cycle 1."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "verification_process",
+      "context": {
+        "id": "r1_c3",
+        "title": "Illustrative verification process contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "verification process",
+          "reference": "Fixture level A of verification_process; cycle 1.",
+          "candidate": "Fixture level B of verification_process; cycle 1."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "feedback_timing",
+      "context": {
+        "id": "r1_c4",
+        "title": "Illustrative feedback timing contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "feedback timing",
+          "reference": "Fixture level A of feedback_timing; cycle 1.",
+          "candidate": "Fixture level B of feedback_timing; cycle 1."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "coordination_constraints",
+      "context": {
+        "id": "r2_c1",
+        "title": "Illustrative coordination constraints contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "coordination constraints",
+          "reference": "Fixture level A of coordination_constraints; cycle 2.",
+          "candidate": "Fixture level B of coordination_constraints; cycle 2."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "adjustment_scope",
+      "context": {
+        "id": "r2_c2",
+        "title": "Illustrative adjustment scope contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "adjustment scope",
+          "reference": "Fixture level A of adjustment_scope; cycle 2.",
+          "candidate": "Fixture level B of adjustment_scope; cycle 2."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "communication_access",
+      "context": {
+        "id": "r2_c3",
+        "title": "Illustrative communication access contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "communication access",
+          "reference": "Fixture level A of communication_access; cycle 2.",
+          "candidate": "Fixture level B of communication_access; cycle 2."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "decision_windows",
+      "context": {
+        "id": "r2_c4",
+        "title": "Illustrative decision windows contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "decision windows",
+          "reference": "Fixture level A of decision_windows; cycle 2.",
+          "candidate": "Fixture level B of decision_windows; cycle 2."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "work_distribution",
+      "context": {
+        "id": "r3_c1",
+        "title": "Illustrative work distribution contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "work distribution",
+          "reference": "Fixture level A of work_distribution; cycle 3.",
+          "candidate": "Fixture level B of work_distribution; cycle 3."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "incentive_alignment",
+      "context": {
+        "id": "r3_c2",
+        "title": "Illustrative incentive alignment contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "incentive alignment",
+          "reference": "Fixture level A of incentive_alignment; cycle 3.",
+          "candidate": "Fixture level B of incentive_alignment; cycle 3."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "interpretation_compatibility",
+      "context": {
+        "id": "r3_c3",
+        "title": "Illustrative interpretation compatibility contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "interpretation compatibility",
+          "reference": "Fixture level A of interpretation_compatibility; cycle 3.",
+          "candidate": "Fixture level B of interpretation_compatibility; cycle 3."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "implementation_latency",
+      "context": {
+        "id": "r3_c4",
+        "title": "Illustrative implementation latency contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "implementation latency",
+          "reference": "Fixture level A of implementation_latency; cycle 3.",
+          "candidate": "Fixture level B of implementation_latency; cycle 3."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "reversibility",
+      "context": {
+        "id": "r4_c1",
+        "title": "Illustrative reversibility contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "reversibility",
+          "reference": "Fixture level A of reversibility; cycle 4.",
+          "candidate": "Fixture level B of reversibility; cycle 4."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "transition_continuity",
+      "context": {
+        "id": "r4_c2",
+        "title": "Illustrative transition continuity contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "transition continuity",
+          "reference": "Fixture level A of transition_continuity; cycle 4.",
+          "candidate": "Fixture level B of transition_continuity; cycle 4."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "exit_cost",
+      "context": {
+        "id": "r4_c3",
+        "title": "Illustrative exit cost contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "exit cost",
+          "reference": "Fixture level A of exit_cost; cycle 4.",
+          "candidate": "Fixture level B of exit_cost; cycle 4."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    },
+    {
+      "attribute_code": "experimentation_cost",
+      "context": {
+        "id": "r4_c4",
+        "title": "Illustrative experimentation cost contrast",
+        "target_relation": "focal",
+        "shared_facts": [
+          "The outcome is whether the potential vessel-sharing alliance forms, not the performance of an established alliance.",
+          "The lower-versus-higher market-complementarity contrast retains at least one common market and is identical across contexts."
+        ],
+        "held_conditions": [],
+        "changed_attribute": {
+          "attribute": "experimentation cost",
+          "reference": "Fixture level A of experimentation_cost; cycle 4.",
+          "candidate": "Fixture level B of experimentation_cost; cycle 4."
+        },
+        "mechanism": "This programmed design exercises the workflow and makes no substantive prediction.",
+        "rival": "A different stated condition could explain the response.",
+        "discriminating_test": "Vary the stated condition while holding the task fixed.",
+        "expected_direction": "uncertain"
+      }
+    }
+  ],
+  "prior_selected_ids": [
+    "r1_c1",
+    "r1_c3",
+    "r2_c1",
+    "r2_c2",
+    "r3_c3",
+    "r3_c4",
+    "r4_c1",
+    "r4_c4"
+  ],
+  "prior_results": [
+    {
+      "id": "r1_c1",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r1_c3",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r2_c1",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r2_c2",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r3_c3",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r3_c4",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r4_c1",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    },
+    {
+      "id": "r4_c4",
+      "yield": true,
+      "magnitude": 20,
+      "deltas": [
+        20,
+        20
+      ],
+      "ratings": [
+        {
+          "reference": 20,
+          "candidate": 40
+        },
+        {
+          "candidate": 40,
+          "reference": 20
+        }
+      ]
+    }
+  ]
+}
