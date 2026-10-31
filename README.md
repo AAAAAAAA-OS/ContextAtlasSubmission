@@ -6,8 +6,6 @@ The result is a **context atlas**: a collection of contextual comparisons, model
 
 **[Open the research studio](https://contextatlas-research-studio.jzhengas.chatgpt.site/)** to explore the workflow and browse examples.
 
-If the main website is unavailable, use the [alternative research studio](https://contextatlas-research.app.workbuddy.host/?sharecode=BI3ZUMSDQC).
-
 ## How it works
 
 1. **Define the relationship.** Specify the factor of interest (X), the outcome (Y) and the original setting. Keep X, Y, the unit of analysis and the time horizon consistent throughout the search.
