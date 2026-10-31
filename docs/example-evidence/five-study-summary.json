@@ -17,7 +17,7 @@
       100
     ],
     "coverageCodersPerStudy": 1,
-    "eligibility": "Two blinded coders assessed pooled pairs; both had to admit a pair. This admission decision was retained when coverage was recoded.",
+    "eligibility": "Two blinded coders assessed pooled pairs; both had to admit a pair.",
     "coverage": "One blinded coder per study assigned a common attribute vocabulary to eligible pairs pooled across both methods. Method labels and scores were hidden.",
     "budget": "Equal final context slots; generation and review calls were not matched."
   },
