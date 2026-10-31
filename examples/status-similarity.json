@@ -1,0 +1,31 @@
+{
+  "title": "Status similarity and syndicate inclusion",
+  "x": "Status similarity: lower bank status divided by higher bank status",
+  "y": "Lead bank selects potential bank for stock-offering syndicate",
+  "unit": "Lead bank-potential partner-stock offering",
+  "timeHorizon": "Formation of the syndicate for one stock offering",
+  "setting": "A lead investment bank considers including a potential partner in a stock-offering syndicate. Status is market prestige reflected in tombstone positioning, not network centrality. Resource complementarity and prior joint experience remain comparable across the status-similarity contrast.",
+  "task": "Rate how greater status similarity changes the likelihood of syndicate inclusion. Compare lower X (Lower min/max status ratio) with higher X (Higher min/max status ratio). Use the same X contrast in both contexts. A positive rating means higher X is associated with more Y; a negative rating means less Y. Rate the relationship, not the overall level of Y. Do not interpret this judgment as a measured empirical coefficient.",
+  "xContrast": {
+    "lower": "Lower min/max status ratio",
+    "higher": "Higher min/max status ratio"
+  },
+  "sharedFacts": [
+    "The outcome is inclusion in the particular offering syndicate.",
+    "Greater status similarity means a higher ratio of the lower to higher status; it is not defined as higher absolute partner status."
+  ],
+  "rounds": 5,
+  "contextsPerRound": 2,
+  "method": "atlas",
+  "sourceEvidence": {
+    "citation": "Chung, S. (A.), Singh, H., and Lee, K. (2000). Complementarity, Status Similarity and Social Capital as Drivers of Alliance Formation. Strategic Management Journal, 21(1), 1-22.",
+    "measurementNotes": "US investment banking syndication; same offering type and resource and tie-history conditions",
+    "sourceLocations": [
+      "PDF4/4 H2",
+      "PDF8/8 outcome",
+      "PDF11/11 measure",
+      "PDF14/14 results"
+    ],
+    "translationNotes": "Status is asymmetric tombstone-bracket prestige, not alliance centrality. Changing one bank score also changes absolute status; two zero scores are coded similarity one."
+  }
+}

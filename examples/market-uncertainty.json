@@ -1,0 +1,31 @@
+{
+  "title": "Market uncertainty and existing alliance partners",
+  "x": "Market uncertainty: prior-year mean monthly stock-price coefficient of variation of sampled industry peers, excluding focal firm",
+  "y": "Annual count of additional alliances with existing alliance partners",
+  "unit": "Firm-year",
+  "timeHorizon": "The following calendar year",
+  "setting": "An established firm operates in an industry with multiple potential alliance partners. Its existing alliance ties and own firm-specific volatility are held fixed when comparing lower and higher market uncertainty. Existing partners mean firms with which it has already formed an alliance; no prior success is assumed.",
+  "task": "Rate how increasing market uncertainty changes the number of additional alliances formed with existing partners in the following year. Compare lower X (Lower industry-peer mean volatility) with higher X (Higher industry-peer mean volatility). Use the same X contrast in both contexts. A positive rating means higher X is associated with more Y; a negative rating means less Y. Rate the relationship, not the overall level of Y. Do not interpret this judgment as a measured empirical coefficient.",
+  "xContrast": {
+    "lower": "Lower industry-peer mean volatility",
+    "higher": "Higher industry-peer mean volatility"
+  },
+  "sharedFacts": [
+    "The outcome is the number of additional alliances with existing partners during the following year, not the proportion choosing an existing partner.",
+    "The market-uncertainty contrast is held identical across the reference and candidate contexts."
+  ],
+  "rounds": 5,
+  "contextsPerRound": 2,
+  "method": "atlas",
+  "sourceEvidence": {
+    "citation": "Beckman, C. M., Haunschild, P. R., and Phillips, D. J. (2004). Friends or Strangers? Firm-Specific Uncertainty, Market Uncertainty, and Network Partner Selection. Organization Science, 15(3), 259-275. doi:10.1287/orsc.1040.0065.",
+    "measurementNotes": "Firm-specific volatility and existing alliance network held constant",
+    "sourceLocations": [
+      "PDF5/263 H3",
+      "PDF6/264 outcome",
+      "PDF7/265 uncertainty",
+      "PDF12/270 results"
+    ],
+    "translationNotes": "Do not equate volatility with an invented forecast error; do not add successful prior projects; count is not a preference share."
+  }
+}

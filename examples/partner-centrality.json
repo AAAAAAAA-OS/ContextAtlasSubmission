@@ -1,0 +1,32 @@
+{
+  "title": "Partner centrality and alliance formation by peripheral firms",
+  "x": "Potential partner network centrality conditional on focal firm having below-mean centrality",
+  "y": "Technical-alliance formation",
+  "unit": "Firm dyad-year",
+  "timeHorizon": "One firm-dyad year",
+  "setting": "A chemical-industry firm with below-mean alliance-network centrality considers a technical alliance. Its potential partner can have below-mean or at-least-mean centrality, measured consistently from the preceding four-year alliance network. Both firms must participate; centrality does not confer ownership or unilateral authority.",
+  "task": "Rate how changing the prospective partner from low to high network centrality changes alliance-formation likelihood for the peripheral firm. Compare lower X (Both firms below annual mean centrality) with higher X (Focal firm below mean, potential partner at or above mean). Use the same X contrast in both contexts. A positive rating means higher X is associated with more Y; a negative rating means less Y. Rate the relationship, not the overall level of Y. Do not interpret this judgment as a measured empirical coefficient.",
+  "xContrast": {
+    "lower": "Both firms below annual mean centrality",
+    "higher": "Focal firm below mean, potential partner at or above mean"
+  },
+  "sharedFacts": [
+    "The focal firm remains below mean centrality in both contexts.",
+    "Higher partner centrality means changing from a below-mean partner to an at-least-mean partner; combined dyad centrality is not artificially held fixed."
+  ],
+  "rounds": 5,
+  "contextsPerRound": 2,
+  "method": "atlas",
+  "sourceEvidence": {
+    "citation": "Ahuja, G., Polidoro, F., Jr., and Mitchell, W. (2009). Structural Homophily or Social Asymmetry? The Formation of Alliances by Poorly Embedded Firms. Strategic Management Journal, 30(9), 941-958. doi:10.1002/smj.774.",
+    "measurementNotes": "Chemical industry technical alliances; focal firm remains peripheral; identical centrality definition",
+    "sourceLocations": [
+      "PDF5/945 H2",
+      "PDF7/947 sample",
+      "PDF8/948 measure",
+      "PDF9/949 thresholds",
+      "PDF13-14/953-954 results"
+    ],
+    "translationNotes": "Bonacich eigenvector centrality in symmetric prior-four-year alliance network; contrast also changes combined centrality. H2 weakens to p<0.07 controlling combined centrality. Do not substitute majority ownership H3."
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "title": "Five-study contextual-search comparison",
+  "date": "2026-10-30",
+  "model": "OpenAI GPT-6 Astra",
+  "modelId": "gpt-6-astra",
+  "reasoningEffort": "low",
+  "status": "Archived research evaluation; not output from the offline demo or a new API run of this release.",
+  "design": {
+    "studies": 5,
+    "contextsPerMethodPerStudy": 10,
+    "contextatlasRounds": 5,
+    "selectedPerRound": 2,
+    "candidatesPerRound": 4,
+    "assessmentsPerPair": 2,
+    "decisionScale": [
+      -100,
+      100
+    ],
+    "coverageCodersPerStudy": 1,
+    "eligibility": "Two blinded coders assessed pooled pairs; both had to admit a pair.",
+    "coverage": "One blinded coder per study assigned a common attribute vocabulary to eligible pairs pooled across both methods. Method labels and scores were hidden.",
+    "budget": "Equal final context slots; generation and review calls were not matched."
+  },
+  "metricDefinitions": {
+    "yield": "The number of eligible pairs whose changed-minus-reference rating differences have the same nonzero sign and absolute size at least 10 in both assessments, divided by all allocated slots.",
+    "magnitude": "For each eligible complete pair, the smaller absolute difference across the two assessments when their signs agree; zero otherwise. Averaged over eligible complete pairs.",
+    "attributeCoverage": "Number of distinct primary observable variables changed among eligible pairs, using one pooled coding vocabulary per study. Synonyms, reversed directions and different levels of the same variable are merged.",
+    "conceptCoverage": "Number of distinct primary conceptual categories assigned to those variables. Seven project categories are available; clearly defined additional categories are retained.",
+    "aggregate": "Yield pools all 50 allocated slots. Magnitude pools eligible complete pairs. Coverage averages the five study-specific counts; it is not a global unique count or a percentage."
+  },
+  "studies": [
+    {
+      "studyId": "beckman2004",
+      "citation": "Beckman, C. M., Haunschild, P. R., and Phillips, D. J. (2004). Friends or Strangers? Firm-Specific Uncertainty, Market Uncertainty, and Network Partner Selection. Organization Science, 15(3), 259-275. doi:10.1287/orsc.1040.0065.",
+      "x": "Market uncertainty: prior-year mean monthly stock-price coefficient of variation of sampled industry peers, excluding focal firm",
+      "y": "Annual count of additional alliances with existing alliance partners",
+      "methods": {
+        "direct_prompting": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 3,
+          "yield": 0.3,
+          "magnitude": 6.3,
+          "attributeCoverage": 10,
+          "conceptCoverage": 4,
+          "additionalConceptKeys": []
+        },
+        "contextatlas": {
+          "allocated": 10,
+          "eligible": 9,
+          "complete": 9,
+          "yieldCount": 6,
+          "yield": 0.6,
+          "magnitude": 14.11111111111111,
+          "attributeCoverage": 9,
+          "conceptCoverage": 5,
+          "additionalConceptKeys": [
+            "other_disruption_loss_severity"
+          ]
+        }
+      }
+    },
+    {
+      "studyId": "mitsuhashi_greve2009",
+      "citation": "Mitsuhashi, H., and Greve, H. R. (2009). A Matching Theory of Alliance Formation and Organizational Success: Complementarity and Compatibility. Academy of Management Journal, 52(5), 975-995.",
+      "x": "Market complementarity between potential liner-shipping alliance partners",
+      "y": "Observed vessel-sharing alliance formation",
+      "methods": {
+        "direct_prompting": {
+          "allocated": 10,
+          "eligible": 9,
+          "complete": 9,
+          "yieldCount": 3,
+          "yield": 0.3,
+          "magnitude": 7.222222222222222,
+          "attributeCoverage": 9,
+          "conceptCoverage": 3,
+          "additionalConceptKeys": []
+        },
+        "contextatlas": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 9,
+          "yield": 0.9,
+          "magnitude": 29.2,
+          "attributeCoverage": 10,
+          "conceptCoverage": 4,
+          "additionalConceptKeys": []
+        }
+      }
+    },
+    {
+      "studyId": "chung_singh_lee2000",
+      "citation": "Chung, S. (A.), Singh, H., and Lee, K. (2000). Complementarity, Status Similarity and Social Capital as Drivers of Alliance Formation. Strategic Management Journal, 21(1), 1-22.",
+      "x": "Status similarity: lower bank status divided by higher bank status",
+      "y": "Lead bank selects potential bank for stock-offering syndicate",
+      "methods": {
+        "direct_prompting": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 3,
+          "yield": 0.3,
+          "magnitude": 5.9,
+          "attributeCoverage": 10,
+          "conceptCoverage": 5,
+          "additionalConceptKeys": []
+        },
+        "contextatlas": {
+          "allocated": 10,
+          "eligible": 9,
+          "complete": 9,
+          "yieldCount": 2,
+          "yield": 0.2,
+          "magnitude": 7.666666666666667,
+          "attributeCoverage": 9,
+          "conceptCoverage": 7,
+          "additionalConceptKeys": []
+        }
+      }
+    },
+    {
+      "studyId": "ahuja_polidoro_mitchell2009",
+      "citation": "Ahuja, G., Polidoro, F., Jr., and Mitchell, W. (2009). Structural Homophily or Social Asymmetry? The Formation of Alliances by Poorly Embedded Firms. Strategic Management Journal, 30(9), 941-958. doi:10.1002/smj.774.",
+      "x": "Potential partner network centrality conditional on focal firm having below-mean centrality",
+      "y": "Technical-alliance formation",
+      "methods": {
+        "direct_prompting": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 6,
+          "yield": 0.6,
+          "magnitude": 15.5,
+          "attributeCoverage": 10,
+          "conceptCoverage": 7,
+          "additionalConceptKeys": [
+            "other_facility_affiliation"
+          ]
+        },
+        "contextatlas": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 5,
+          "yield": 0.5,
+          "magnitude": 12.5,
+          "attributeCoverage": 10,
+          "conceptCoverage": 4,
+          "additionalConceptKeys": []
+        }
+      }
+    },
+    {
+      "studyId": "lavie_rosenkopf2006",
+      "citation": "Lavie, D., and Rosenkopf, L. (2006). Balancing Exploration and Exploitation in Alliance Formation. Academy of Management Journal, 49(4), 797-818.",
+      "x": "Accumulated structure-exploration experience through preceding year: historical average indicator that alliance partner had no prior joint alliance",
+      "y": "Current-year structure exploration: average new-partner indicator over alliances formed that year",
+      "methods": {
+        "direct_prompting": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 3,
+          "yield": 0.3,
+          "magnitude": 7.5,
+          "attributeCoverage": 10,
+          "conceptCoverage": 6,
+          "additionalConceptKeys": []
+        },
+        "contextatlas": {
+          "allocated": 10,
+          "eligible": 10,
+          "complete": 10,
+          "yieldCount": 5,
+          "yield": 0.5,
+          "magnitude": 9.0,
+          "attributeCoverage": 10,
+          "conceptCoverage": 6,
+          "additionalConceptKeys": []
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "direct_prompting": {
+      "allocated": 50,
+      "eligible": 49,
+      "complete": 49,
+      "yieldCount": 18,
+      "yield": 0.36,
+      "magnitude": 8.510204081632653,
+      "meanAttributeCoverage": 9.8,
+      "meanConceptCoverage": 5.0
+    },
+    "contextatlas": {
+      "allocated": 50,
+      "eligible": 48,
+      "complete": 48,
+      "yieldCount": 27,
+      "yield": 0.54,
+      "magnitude": 14.645833333333334,
+      "meanAttributeCoverage": 9.6,
+      "meanConceptCoverage": 5.2
+    }
+  },
+  "source": {
+    "archive": "coverage_single_v1_20261030/results.json",
+    "sha256": "aacdffe7862db24f56c2f23c148fbbacc6234d4fdc4e96b7ae603377bb44cb16",
+    "note": "Compact numeric export from the frozen research archive. Study titles and field names are expanded for readability; numerical values are unchanged."
+  }
+}
