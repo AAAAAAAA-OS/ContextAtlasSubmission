@@ -2,27 +2,50 @@
 
 ContextAtlas uses AI agents to help researchers explore the conditions under which a relationship may strengthen, weaken or reverse. Give it a research question and a starting context. It proposes alternative settings, assesses how the relationship changes, and uses what it finds to guide the next round of exploration.
 
-The result is a **context atlas**: a collection of contextual comparisons, model assessments and ideas for follow-up studies. Each comparison records what changed, what stayed fixed and why the difference may matter.
+The result is a **context atlas**: a collection of contextual comparisons, model assessments and ideas for follow-up studies. Each comparison records what changed, what stayed fixed and why the difference may matter, helping researchers choose which conditions to investigate empirically.
 
 **[Open the research studio](https://contextatlas-research-studio.jzhengas.chatgpt.site/)** to explore the workflow and browse examples.
+
+If the main website is unavailable, use the [alternative research studio](https://contextatlas-research.app.workbuddy.host/?sharecode=BI3ZUMSDQC).
 
 ## How it works
 
 1. **Define the relationship.** Specify the factor of interest (X), the outcome (Y) and the original setting. Keep X, Y, the unit of analysis and the time horizon consistent throughout the search.
 2. **Develop contextual comparisons.** The planner proposes pairs of settings that differ in one observable condition. For example, a shipping alliance might require approval from a central executive in one setting and consent from local managers in the other.
 3. **Review and select.** The system checks whether each comparison is coherent and feasible, then selects promising questions that also broaden the range of attributes and concepts explored.
-4. **Assess the relationship.** Decision agents assess the same X–Y relationship in both settings. Each pair receives two independent assessments, with the presentation order reversed in the second. These agents see the task and facts; the planner's expectations and search history remain separate.
+4. **Assess the relationship.** Decision agents assess the same X–Y relationship in both settings. Each pair receives two independent assessments, with setting and fact order reversed in the second. These agents see the task and facts; the planner's expectations and search history remain separate.
 5. **Build on earlier rounds.** The planner uses a growing record of proposals and results to avoid repeating comparisons and pursue unresolved questions. Search continues until the chosen round budget is reached.
 
-By default, each of five rounds proposes four comparisons and selects two, producing up to ten comparisons in total. The atlas connects concrete contextual attributes, such as approval rights, to broader concepts, such as institutional constraints. Its report summarizes how often the assessed relationship changes, how large those changes are, and the range of attributes and concepts explored.
+By default, each of five rounds proposes four comparisons and selects two, allocating ten comparisons in total. Research memory retains earlier proposals, selected comparisons and numerical results. Later planning builds on this record; model weights are not updated.
+
+Following Levinthal and Rosenkopf (2026), the atlas distinguishes **nominal settings → contextual attributes → broader conceptual categories**. For example, liner shipping is a setting, local approval rights are an observable attribute, and institutional constraints are the broader concept. The reported searches hold each study's nominal setting fixed and explore its attributes. Their reports summarize how often the assessed relationship changes, how large those changes are, and the range of attributes and concepts explored.
 
 ![From a research question to a context atlas](docs/media/figure1.svg)
 
 *The workflow connects study design, contextual search and relationship assessment through a research memory available to the planner. [View as PDF](docs/media/figure1.pdf) · [PNG](docs/media/figure1.png).*
 
-## Illustrative examples
+## Initial evidence
 
-The [research studio](https://contextatlas-research-studio.jzhengas.chatgpt.site/) includes five illustrative examples drawn from research on alliances and partner choice. Open **Five research studies** to browse the questions, follow the search rounds and inspect individual comparisons. You can explore these saved examples without an API key or starting a new search.
+Before context search, we checked the decision agent against published governance results. With its prompt fixed, fresh assessments matched **five of six** supported contextual patterns from Krishnan et al. (2016) and **six of eight** directional effects from Geyskens et al. (2006), in both presentation orders. These papers also informed prompt development, so this is a check against established evidence rather than a held-out accuracy estimate.
+
+We then compared ContextAtlas with one-shot generation using **GPT-6 Astra** across five alliance studies. Each method produced ten final comparisons per study, assessed with the same decision prompt and common eligibility and coverage procedures.
+
+| Measure | One-shot generation | ContextAtlas |
+| --- | ---: | ---: |
+| Yield | 18/50 (36%) | 27/50 (54%) |
+| Magnitude | 8.5 | 14.6 |
+| Attribute coverage, mean per study | 9.8 | 9.6 |
+| Concept coverage, mean per study | 5.0 | 5.2 |
+
+**Yield** counts comparisons that change the relationship rating by at least ten points in the same direction in both assessments, out of all allocated comparisons. **Magnitude** averages the smaller absolute change across the two assessments for each eligible comparison, assigning zero when the directions disagree. **Coverage** counts distinct changed attributes and their broader concepts among eligible comparisons. The coverage values above are study averages, not percentages. See the [measurement guide](docs/MEASUREMENT.md) for the full definitions.
+
+ContextAtlas found **50% more qualifying comparisons**, with larger rating changes and similar attribute and concept coverage. It had higher yield in three studies, while one-shot generation had higher yield in two. The largest advantage came from shipping: comparisons around approval rights and enforceable market access suggest how complementary markets might translate into alliance opportunities. These are concrete questions for empirical study.
+
+The comparison matches the number of final comparisons; ContextAtlas uses more planning and review calls. The table summarizes the archived research evaluation, while this API package supports new searches. Read the [study findings and evaluation details](docs/RESULTS.md), or inspect the [machine-readable results](docs/example-evidence/five-study-summary.json).
+
+## Explore the completed studies
+
+The [research studio](https://contextatlas-research-studio.jzhengas.chatgpt.site/) includes the five completed searches on alliances and partner choice. Open **Five research studies** to browse the questions, follow the search rounds and inspect individual comparisons. You can explore these saved results without an API key or starting a new search.
 
 **Start with a question.** The studio guides you through defining the relationship, describing its context and choosing how many rounds to explore.
 
@@ -74,6 +97,18 @@ npm run run -- --input examples/shipping-complementarity.json --output runs/ship
 Open `runs/shipping-atlas/report.md` to read the resulting atlas. The same folder contains the individual comparisons, assessments and search memory. Prompts and saved records are in English, and API requests are non-streaming.
 
 Compatible API endpoints can be configured through the same `.env` file. If Python is not on your system path, set `PYTHON` to its executable path. The [architecture guide](docs/ARCHITECTURE.md) explains the runtime and model interface.
+
+### Compare with one-shot generation
+
+Run both methods from the same study input, then evaluate their comparisons together. The baseline proposes its full set of contexts in one request. Using `--defer-evaluation` reserves eligibility and coverage coding for the common evaluation step:
+
+```bash
+npm run run -- --input examples/shipping-complementarity.json --method atlas --output runs/shipping-atlas-comparison --defer-evaluation
+npm run run -- --input examples/shipping-complementarity.json --method baseline --output runs/shipping-baseline-comparison --defer-evaluation
+npm run compare -- --atlas runs/shipping-atlas-comparison --baseline runs/shipping-baseline-comparison --output runs/shipping-comparison
+```
+
+These commands make model calls using your configured API. The comparison saves `comparison.md` and `comparison.json`, with common eligibility decisions and one shared coverage vocabulary. It keeps both original run records intact. Use new output folders for a new comparison.
 
 ## Explore your own question
 
