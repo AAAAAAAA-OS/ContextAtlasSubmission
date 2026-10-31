@@ -4,7 +4,7 @@ ContextAtlas uses AI agents to help researchers explore the conditions under whi
 
 The result is a **context atlas**: a collection of contextual comparisons, model assessments and ideas for follow-up studies. Each comparison records what changed, what stayed fixed and why the difference may matter, helping researchers choose which conditions to investigate empirically.
 
-**[Open the research studio](https://contextatlas-research-studio.jzhengas.chatgpt.site/)** to explore the workflow and browse examples.
+**[Open the research studio](https://contextatlas.org/)** to explore the workflow and browse examples.
 
 ## How it works
 
