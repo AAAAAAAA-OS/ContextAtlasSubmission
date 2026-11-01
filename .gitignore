@@ -1,0 +1,12 @@
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+runs/
+__pycache__/
+*.pyc
+.DS_Store
+*.json.calls/
+*.log
+.test-tmp/
